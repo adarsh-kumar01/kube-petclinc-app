@@ -22,13 +22,13 @@ pipeline {
                   volumes:
                   - name: maven-cache
                     persistentVolumeClaim:
-                        claimName: efs-pvc
+
             '''
         }
     }
 
     environment {
-        DOCKER_HUB_REPO = "techiescamp/jenkins-java-app"
+        DOCKER_HUB_REPO = "adarsh321/kaniko"
         IMAGE_TAG = "2.0.0"
     }
 
